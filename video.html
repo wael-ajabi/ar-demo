@@ -117,7 +117,7 @@ function initialize()
 		type: 'pattern', patternUrl: "data/hiro.patt",
 	})
 
-	let geometry1 = new THREE.PlaneBufferGeometry(2,2, 4,4);
+	let geometry1 = new THREE.PlaneBufferGeometry(10,10, 4,4);
 
 	let video = document.getElementById( 'video' );
 	let texture = new THREE.VideoTexture( video );
@@ -127,7 +127,7 @@ function initialize()
 	let material1 = new THREE.MeshBasicMaterial( { map: texture } );
 	
 	mesh1 = new THREE.Mesh( geometry1, material1 );
-	mesh1.rotation.x = -Math.PI/2;
+	// mesh1.rotation.x = -Math.PI/2;
 	
 	markerRoot1.add( mesh1 );
 }
